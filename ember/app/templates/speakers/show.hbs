@@ -1,5 +1,8 @@
 <h4>{{model.name}}</h4>
 
-<p>
-  Speaker show page
-</p>
+<h5>Presentations</h5>
+<ul>
+  {{#each model.presentation_ids as |present|}}
+    <li>{{present.title}}</li>
+  {{/each}}
+</ul>

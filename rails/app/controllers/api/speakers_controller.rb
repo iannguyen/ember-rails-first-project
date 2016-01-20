@@ -1,10 +1,10 @@
 class Api::SpeakersController < ApplicationController
   def index
-    render json: Speaker.all
+    render json: Speaker.includes(:presentations).all
   end
 
   def show
-    render json: Speaker.find(params[:id])
+    render json: Speaker.includes(:presentations).find(params[:id])
   end
 
 end
