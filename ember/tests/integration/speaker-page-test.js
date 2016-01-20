@@ -9,9 +9,9 @@ module('Integration - Speaker Page', {
   beforeEach: function() {
     App = startApp();
     var speakers = [
-      { id: 1, name: 'Bugs Bunny', presentation_ids: [1,2] },
-      { id: 2, name: 'Wile E. Coyote', presentation_ids: [3] },
-      { id: 3, name: 'Yosemite Sam', presentation_ids: [4,5,6] }
+      { id: 1, name: 'Bugs Bunny', presentations: [1,2] },
+      { id: 2, name: 'Wile E. Coyote', presentations: [3] },
+      { id: 3, name: 'Yosemite Sam', presentations: [4,5,6] }
     ];
 
     var presentations = [

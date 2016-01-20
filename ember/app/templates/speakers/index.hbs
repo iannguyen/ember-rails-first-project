@@ -1,3 +1,3 @@
 {{#each model as |speaker| }}
-  {{~#link-to 'speakers.show' speaker}}{{speaker.name}} ({{speaker.presentation_ids.length}}){{~/link-to}}
+  {{~#link-to 'speakers.show' speaker}}{{speaker.name}} ({{speaker.presentations.length}}){{~/link-to}}
 {{/each}}
